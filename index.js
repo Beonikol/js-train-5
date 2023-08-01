@@ -186,10 +186,10 @@ function getEvenNumbers(arr) {
   // Якщо так, додаємо його до масиву результату
   // Повертаємо масив результату
 
-  const free = [];
-  for (let num of arr) {
-    if (num % 2 === 0) {
-      free.push(num);
+  let free = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      free = [...free, arr[i]];
     }
   }
   return free;
